@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>edu.wctc.simple.SimpleServlet</servlet-name>
-        <servlet-class>edu.wctc.simple.SimpleServlet</servlet-class>
+        <servlet-class>edu.wctc.controller.controller.SimpleServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>

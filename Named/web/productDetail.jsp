@@ -12,7 +12,7 @@
     <title>Product Detail</title>
 </head>
 <body>
-<a href="index.jsp">Home Page </a>
+<a href="home.jsp">Home Page </a>
 <a href="productsList.jsp">Products List </a>
 <a href="viewShoppingCart.jsp.jsp">View Cart </a>
 PRODUCT DETAIL. STUFF WILL GO HERE.
