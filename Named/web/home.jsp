@@ -1,6 +1,7 @@
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.Iterator" %>
-<%@ page import="edu.wctc.controller.controller.SimpleServlet" %>>
+<%@ page import="edu.wctc.model.Item" %>
+>
 <%--
   Created by IntelliJ IDEA.
   User: bitstudent
@@ -8,7 +9,7 @@
   Time: 7:18 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
   <title>Jacks Website.</title>
@@ -19,14 +20,14 @@
   <div id="nav">
     <h2>Jacks Website.</h2>
     <a href="productsList.jsp">Products List </a>
-    <a href="productDetail.jsp.jsp">Products Detail </a>
-    <a href="viewShoppingCart.jsp.jsp">View Cart </a>
+    <a href="productDetail.jsp">Products Detail </a>
+    <a href="viewShoppingCart.jsp">View Cart </a>
   </div>
   <br>
 </div>
 <div id="homeBody">
   <h3>Home</h3>
-  <form action="viewShoppingCart.go">
+  <form action="viewShoppingCart.jsp">
     <table>
       <%
         List recs = (List) request.getAttribute("productList");
@@ -36,7 +37,7 @@
             out.print("<tr><td><img src'" +
                     item.getImage() +
                     "' height='100'></td><td>" +
-                    item.getName() "</td><td>$" +
+                    item.getName() + "</td><td>$" +
                     item.getPrice() + "</td><td>Add to Cart<input type='checkbox' name='cartItem' value="
                     + item.getProductNumer()+ "></td></tr>");
           }
