@@ -7,7 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<link href="DefaultCss.css" rel="stylesheet" type="text/css">
+<link href="css/DefaultCss.css" rel="stylesheet" type="text/css">
 <head>
     <title>Products List</title>
 </head>
